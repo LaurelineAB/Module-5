@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    margin:0;
+    padding:0;
+    
+    main.container {
+        width:90%;
+        margin:0 auto;
+        
+        section {
+            display:flex;
+            
+            div {
+                height:calc(100vh / 3);
+                background-color: #497F54;
+                border:1px dotted #fff;
+            }
+            
+            &.section-1 div {
+                width:20%;
+            }
+            &.section-1 div:nth-of-type(2) {
+                width:40%;
+                background-color: #3A62EE;
+            }
+            &.section-2 div {
+                width:50%;
+            }
+            &.section-2 div:first-child {
+                background-color: #89010C;
+            }
+            &.section-3 div {
+                width:calc(100% / 3);
+            }
+            &.section-3 div:nth-of-type(3) {
+                background-color: #FCDA2A;
+            }
+        }
+        
+    }
+}

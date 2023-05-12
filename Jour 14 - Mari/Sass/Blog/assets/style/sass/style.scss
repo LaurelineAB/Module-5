@@ -1,0 +1,98 @@
+@import "vars";
+
+html {
+    font-size:14px;
+    
+    body {
+        margin:0;
+        padding:0;
+        font-family:Montserrat, sans-serif;
+        background: linear-gradient($gradientColor1, $gradientColor2, $gradientColor3);
+        
+        // grid-template-rows:auto;
+        
+        
+        header {
+            // grid-area : title;
+            background-color: #403657;
+            color:white;
+            text-transform:uppercase;
+            text-align:center;
+            padding:.5em;
+        }
+        
+        main {
+            display:grid;
+            grid-template-columns:20% auto 20%;
+            // grid-template-areas:
+            // ". main aside";
+            
+            > section {
+                grid-column: 2 / 3;
+                background-color: #fff;
+                
+                h2 {
+                    text-transform:uppercase;
+                    text-align:center;
+                }
+                
+                .articles {
+                    display:grid;
+                    grid-template-columns:repeat(2,1fr);
+                    height:90%;
+                    // gap:1em;
+                    
+                    article {
+                        padding:0.5em;
+                        
+                        img {
+                            width:100%;
+                        }
+                        
+                        h3 {
+                            text-transform:uppercase;
+                        }
+                        
+                        
+                        h4 {
+                            font-style:italic;
+                            font-weight:normal;
+                        }
+                        
+                        a {
+                            text-transform:uppercase;
+                            color:$gradientColor2;
+                            font-weight:bold;
+                        }
+                    }
+                    
+                    article:nth-of-type(odd) h3 {
+                        color:$gradientColor3;
+                    }
+                    
+                    article:nth-of-type(even) h3 {
+                        color:$gradientColor1;
+                    }
+                }
+            }
+            
+            aside {
+                color:white;
+                padding:.5em;
+                
+                h2, h3 {
+                    text-transform:uppercase;
+                    font-weight:normal;
+                    margin:1.5em 0;
+                }
+                p {
+                    margin:.5em 0;
+                }
+            }
+        }
+        
+        footer {
+            height:5em;
+        }
+    }
+}

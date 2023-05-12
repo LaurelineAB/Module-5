@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+body main.container {
+  width: 90%;
+  margin: 0 auto;
+}
+body main.container section {
+  display: flex;
+}
+body main.container section div {
+  height: 33.3333333333vh;
+  background-color: #497F54;
+  border: 1px dotted #fff;
+}
+body main.container section.section-1 div {
+  width: 20%;
+}
+body main.container section.section-2 div {
+  width: 50%;
+}
+body main.container section.section-3 div {
+  width: 33.3333333333%;
+}
+
+/*# sourceMappingURL=style.css.map */
