@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu accessible</title>
+        <link rel="stylesheet" href="CSS/common-v3.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/theme.css">
+    </head>
+    <body>
+        <div class="menu-access">
+           <a tabindex="0" href="#section-1">Section 1</a>
+           <a tabindex="0" href="#section-2">Section 2</a>
+           <a tabindex="0" href="#section-3">Section 3</a>
+        </div>
+        <header>
+            <h1>Menu accessible</h1>
+            <p>Ajouter un menu accessible qui devient visible lors du premier focus (touche tab)</p>
+        </header>
+        <main>
+            <!--(nav>ul>li*3>a{Section $})+(section.gutter.cards>(article>p)+(article#section-$>h2{Section $}+p*3>lorem30)*3)-->
+            <!--<nav>-->
+            <!--    <ul>-->
+            <!--        <li><a href="#section-1" tabindex="0">Section 1</a></li>-->
+            <!--        <li><a href="#section-2" tabindex="0">Section 2</a></li>-->
+            <!--        <li><a href="#section-3" tabindex="0">Section 3</a></li>-->
+            <!--    </ul>-->
+            <!--</nav>-->
+            <section class="gutter cards">
+                <article>
+                    <p>Appuyez sur la touche TAB pour afficher le menu accessible puis pour séléctionner la bonne section, ensuite appuyez sur la touche ENTREE pour valider.</p>
+                </article>
+                <article id="section-1">
+                    <h2>Section 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor qui cumque ipsam sed provident. Ratione, voluptates, vitae, reiciendis, voluptas ducimus ullam doloribus aspernatur repudiandae aperiam dolorem nostrum illum consequatur distinctio.</p>
+                    <p>Aliquam, mollitia, obcaecati dignissimos eos perferendis quas quos adipisci unde neque asperiores rerum laudantium beatae optio nisi quisquam cumque omnis. Nemo, ab, deleniti eveniet delectus assumenda omnis quam quod tenetur?</p>
+                    <p>Laborum, eius, esse harum quae voluptatum culpa fuga temporibus inventore impedit obcaecati eum quas deserunt consequatur aut ad ducimus explicabo vitae qui eaque tempore molestias dolor necessitatibus. Voluptatum, ad dicta.</p>
+                </article>
+                <article id="section-2">
+                    <h2>Section 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, et, quisquam, nisi autem earum repellendus numquam placeat sit porro enim nesciunt recusandae. Nam, laudantium soluta dolorem culpa blanditiis ad! Illo.</p>
+                    <p>Explicabo, maiores, molestias, magnam excepturi necessitatibus consectetur placeat neque obcaecati quas asperiores saepe est dolorem quis fuga dignissimos voluptas similique voluptate aperiam repudiandae sunt sapiente vitae nemo suscipit sint quod!</p>
+                    <p>Eos, sapiente, cupiditate, nesciunt sit aperiam nemo magni quisquam ea assumenda tempore ratione perspiciatis tenetur unde fuga aut rem vel iste ipsam maxime nostrum asperiores ex quas ad iusto voluptate!</p>
+                </article>
+                <article id="section-3">
+                    <h2>Section 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, amet, aut facilis fuga quia recusandae ab illum earum architecto quo aliquid magnam iusto numquam autem impedit aliquam perferendis illo possimus.</p>
+                    <p>Ea, omnis, quod, doloremque, eligendi repellendus delectus saepe doloribus explicabo esse dolorem non deserunt animi voluptatum quasi nisi pariatur ut quia odit nam illo beatae eveniet in quis dolores ex.</p>
+                    <p>Tenetur, excepturi libero enim ad sequi officia laudantium. Rerum, quo, sit nisi odit alias placeat quis aspernatur repellendus vitae nostrum cupiditate unde nesciunt architecto magnam natus. Quod nobis quo odit.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p><a tabindex="1" href="www.3wa.fr"><img src="3wa-logo.png" alt="Propriété de la 3W Academy"></a></p>
+            <p>Ce matériel pédagogique est la propriété de la <a tabindex="2" href="www.3wa.fr">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+        </footer>
+    </body>
+</html>

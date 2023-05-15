@@ -1,0 +1,42 @@
+h2 {
+    margin:0;
+}
+
+code {
+    padding:0 1em;
+    color:white;
+    background-color: #333;
+}
+
+/***ORDRE***/
+.inner {
+    color:purple;
+}
+.outer p {
+    color:green;
+}
+
+/***SPECIFICITE***/
+.alice p {
+    color:blue;
+}
+.alice {
+    color:violet;
+}
+.alice .bob {
+    color:orangered;
+}
+.bob {
+    color:orange;
+}
+p .bob {
+    color:yellow;
+}
+
+/***IMPORTANCE***/
+.important {
+    color:red !important ;
+}
+.base .important {
+    color:green;
+}

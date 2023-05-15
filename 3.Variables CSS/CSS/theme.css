@@ -1,0 +1,20 @@
+/***VARIABLES***/
+:root {
+    --texte:#444;
+    --orange:#DD5735;
+    --default:arial;
+    --titre:20px;
+}
+
+/***ARTICLE***/
+article h2 {
+    font-size:var(--titre);
+    color:var(--orange);
+}
+article p {
+    color:var(--texte);
+    font-family:var(--default);
+}
+button {
+    color:var(--texte);
+}

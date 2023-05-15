@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>HiTech.NET</title>
+    <link rel="stylesheet" href="CSS/style-home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="dark"> <!--classes .dark et .line-height-xl en toggle-->
+    <div class="Menu-access">
+        <a href="#top">Haut de page</a>
+        <a href="#search">Recherche</a>
+        <a href="#account">Mon compte</a>
+        <a href="#cart">Mon panier</a>
+        <a href="#menu">Menu principal</a>
+        <a href="#toc">Sommaire</a>
+    </div>
+    <!--header.Header>(section.Container.Accessibility>p+(p.theme>button*3)+(p.line-height>button*2))+(section.Container.Actions>(a>img+h1+p)+form+a*2)+(nav.Menu-principal>ul>li*4)-->
+    <header class="Header" id="top">
+        <section class="Container Accessibility">
+            <p>Options d'affichage / accessibilité</p>
+            <p class="theme">
+                Thème : 
+                <button>sombre contrasté</button>
+                <button>clair</button>
+            </p>
+            <p class="line-height">
+                Interlignage :
+                <button>simple</button>
+                <button>augmenté</button>
+            </p>
+        </section>
+        <section class="Container Actions">
+            <a href="#" class="title">
+                <img src="ressources/images/logo.svg"></img>
+                <h1>HiTech.NET</h1>
+                <p>Tout le matériel High-Tech</p>
+            </a>
+            <form class="Search" id="search" action="">
+                <input type="text" name="search" placeholder="Chercher un produit, une marque... ❯❯❯"/>
+                <select name="" id="">
+                    <option value="0">Tous les rayons...</option>
+                    <option value="1">Ordinateurs</option>
+                    <option value="2">Périphériques et composants</option>
+                    <option value="3">Téléphones</option>
+                    <option value="4">Objets connectés</option>
+                </select>
+                <button type="submit"></button>
+            </form>
+            <a href="#" id="account">Mon compte</a>
+            <a href="#" id="cart">Mon panier</a>
+        </section>
+        <nav class="Container Menu" id="menu">
+            <ul class="categories">
+                <li>Ordinateurs
+                    <ul class="subnav">
+                        <li>Portables
+                            <ul class="submenu">
+                                <li><a href="#">PC Portable</a></li>
+                                <li><a href="#">Macbook</a></li>
+                                <li><a href="#">Extension de mémoire</a></li>
+                                <li><a href="#">Disque dur 2"1/2</a></li>
+                                <li><a href="#">Sacs et sacoches</a></li>
+                                <li><a href="#">Refroidissement</a></li>
+                                <li><a href="#">Satation d'accueil</a></li>
+                                <li><a href="#">Chargeur</a></li>
+                                <li><a href="#">Garantie</a></li>
+                                <li><a href="#">Batterie</a></li>
+                            </ul>
+                        </li>
+                        <li>Fixes
+                            <ul class="submenu">
+                                <li><a href="#">Ordinateur PC fixe</a></li>
+                                <li><a href="#">Ordinateur Apple</a></li>
+                                <li><a href="#">Barebone</a></li>
+                            </ul>
+                        </li>
+                        <li>Tablettes
+                            <ul class="submenu">
+                                <li><a href="#">Tablette</a></li>
+                                <li><a href="#">iPad</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Périphériques et composants
+                    <ul class="subnav">
+                        <li>Périphériques
+                            <ul class="submenu">
+                                <li><a href="#">Ecran PC</a></li>
+                                <li><a href="#">Clavier/souris</a></li>
+                                <li><a href="#">Imprimante</a></li>
+                                <li><a href="#">Clé USB</a></li>
+                                <li><a href="#">Disque dur externe</a></li>
+                                <li><a href="#">Onduleur</a></li>
+                                <li><a href="#">Enceinte PC</a></li>
+                                <li><a href="#">Casque audio</a></li>
+                                <li><a href="#">Casque VR</a></li>
+                                <li><a href="#">Musique pro</a></li>
+                                <li><a href="#">Tablette graphique</a></li>
+                            </ul>
+                        </li>
+                        <li>Boîtier
+                            <ul class="submenu">
+                                <li><a href="#">Alimentation</a></li>
+                                <li><a href="#">Disque dur</a></li>
+                                <li><a href="#">Disque SSD</a></li>
+                                <li><a href="#">Carte mère</a></li>
+                                <li><a href="#">Carte graphique</a></li>
+                                <li><a href="#">Mémoire PC</a></li>
+                                <li><a href="#">Processeur</a></li>
+                                <li><a href="#">Refroidissement</a></li>
+                                <li><a href="#">Kit upgrade PC</a></li>
+                                <li><a href="#">Batterie PC portable</a></li>
+                            </ul>
+                        </li>
+                        <li>Imprimante
+                            <ul class="submenu">
+                                <li><a href="#">Cartouche</a></li>
+                                <li><a href="#">Toner</a></li>
+                                <li><a href="#">Ruban</a></li>
+                                <li><a href="#">Papier</a></li>
+                            </ul>
+                        </li>
+                        <li>Connectique
+                            <ul class="submenu">
+                                <li><a href="#">Câbles PC</a></li>
+                                <li><a href="#">Adaptateurs PC</a></li>
+                                <li><a href="#">Parafoudre</a></li>
+                                <li><a href="#">Multiprise</a></li>
+                                <li><a href="#">Câble secteur</a></li>
+                                <li><a href="#">Câble HDMI</a></li>
+                                <li><a href="#">Switch HDMI</a></li>
+                                <li><a href="#">Adaptateurs HDMI</a></li>
+                                <li><a href="#">Câble RJ45</a></li>
+                                <li><a href="#">Connectique RJ45</a></li>
+                                <li><a href="#">Câble RJ11/RJ12</a></li>
+                                <li><a href="#">Câble audio numérique</a></li>
+                                <li><a href="#">Câble audiophile</a></li>
+                                <li><a href="#">Adaptateur audio</a></li>
+                                <li><a href="#">Câble audio jack</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Téléphones
+                    <ul class="subnav">
+                        <li>Mobile
+                            <ul class="submenu">
+                                <li><a href="#">Mobile et smartphone</a></li>
+                            </ul>
+                        </li>
+                        <li>Accessoires
+                            <ul class="submenu">
+                                <li><a href="#">Carte mémoire</a></li>
+                                <li><a href="#">Etuis</a></li>
+                                <li><a href="#">Kit piéton/Casque</a></li>
+                                <li><a href="#">Batterie</a></li>
+                                <li><a href="#">Accessoires iPhones</a></li>
+                                <li><a href="#">Chargeur</a></li>
+                                <li><a href="#">Câble et adaptateur</a></li>
+                                <li><a href="#">Station d'accueil</a></li>
+                                <li><a href="#">Pile et chargeur</a></li>
+                                <li><a href="#">Batterie téléphone</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Objets connectés
+                    <ul class="subnav">
+                        <li>Maison
+                            <ul class="submenu">
+                                <li><a href="#">Caméra de surveillance</a></li>
+                                <li><a href="#">Détecteur & capteur</a></li>
+                                <li><a href="#">Kit alarme</a></li>
+                                <li><a href="#">Centrale multifonction</a></li>
+                                <li><a href="#">Enregistrement vidéo</a></li>
+                                <li><a href="#">Station météo</a></li>
+                                <li><a href="#">Ampoule connectée</a></li>
+                                <li><a href="#">Enceinte connectée</a></li>
+                            </ul>
+                        </li>
+                        <li>Loisirs
+                            <ul class="submenu">
+                                <li><a href="#">Drone</a></li>
+                                <li><a href="#">Gyropode</a></li>
+                                <li><a href="#">Accessoire drone</a></li>
+                                <li><a href="#">Montre connectée</a></li>
+                            </ul>
+                        </li>
+                        <li>Sport
+                            <ul class="submenu">
+                                <li><a href="#">Montre connectée</a></li>
+                                <li><a href="#">Bracelet connecté</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
