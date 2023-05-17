@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HiTech.NET</title>
-    <link rel="stylesheet" href="icomoon/style-ico.css"/>
+    <link rel="stylesheet" href="icomoon/front/style-ico.css"/>
     <link rel="stylesheet" href="CSS/style-home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     </head>
-<body> <!--classes .dark et .line-height-xl en toggle-->
+<body> <!--  class="dark" classes .dark et .line-height-xl en toggle-->
     <div class="Menu-access">
         <a href="#top">Haut de page</a>
-        <a href="#search">Recherche</a>
+        <a href="#searchbar">Recherche</a>
         <a href="#account">Mon compte</a>
         <a href="#cart">Mon panier</a>
         <a href="#menu">Menu principal</a>
@@ -38,27 +38,31 @@
         </section>
         <section class="Container Actions">
             <a href="#" class="title">
-                <img src="ressources/images/logo.svg"></img>
+                <img src="ressources/images/logo.svg" alt="Logo">
                 <h1>HiTech.NET</h1>
                 <p>Tout le matériel High-Tech</p>
             </a>
-            <form class="Search" id="search" action="">
-                <input type="text" name="search" placeholder="Chercher un produit, une marque... ❯❯❯"/>
-                <select name="" id="">
+            <form class="Search" id="searchbar" action="_GET">
+                <label for="search"></label>
+                <input type="text" name="search" id="search" placeholder="Chercher un produit, une marque..."/>
+                <label for="rayons"></label>
+                <select name="rayons" id="rayons">
                     <option value="0">Tous les rayons...</option>
                     <option value="1">Ordinateurs</option>
                     <option value="2">Périphériques et composants</option>
                     <option value="3">Téléphones</option>
                     <option value="4">Objets connectés</option>
                 </select>
-                <button type="submit"></button>
+                <button type="submit"><span class="icon-search"></span></button>
             </form>
-            <a href="#" id="account">Mon compte</a>
-            <a href="#" id="cart" class="icon-cart">Mon panier</a>
+            <section class="Boutons">
+                <a href="#" id="account"><span class="icon-user"></span>Mon compte</a>
+                <a href="#" id="cart"><span class="icon-cart"></span>Mon panier</a>
+            </section>
         </section>
         <nav class="Container Menu" id="menu">
             <ul class="categories">
-                <li>Ordinateurs
+                <li><span class="icon-display"></span>Ordinateurs
                     <ul class="subnav">
                         <li>Portables
                             <ul class="submenu">
@@ -89,7 +93,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>Périphériques et composants
+                <li><span class="icon-data"></span>Périphériques et composants
                     <ul class="subnav">
                         <li>Périphériques
                             <ul class="submenu">
@@ -149,7 +153,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>Téléphones
+                <li><span class="icon-phone"></span>Téléphones
                     <ul class="subnav">
                         <li>Mobile
                             <ul class="submenu">
@@ -172,7 +176,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>Objets connectés
+                <li><span class="icon-clock"></span>Objets connectés
                     <ul class="subnav">
                         <li>Maison
                             <ul class="submenu">
@@ -205,5 +209,104 @@
             </ul>
         </nav>
     </header>
+    
+    <main class="Container">
+        <ul class="breadcrumbs">
+            <li><span class="icon-shop"></span><a href="#">Accueil</a></li>
+            <li><span class="icon-data"></span><a href="#">Périphériques et composants</a></li>
+            <li><a href="#">Ecrans d'ordinateur</a></li>
+            <li>AOC 24B1XHS</li>
+        </ul>
+        <section class="Product-name">
+            <h2>AOC 24B1XHS</h2>
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#description">Descriptif</a></li>
+                <li><a href="#caracteristics">Caractéristiques techniques</a></li>
+            </ul>
+        </section>
+        <section class="Product-presentation" id="presentation">
+            <h3>Présentation</h3>
+            <ul class="tags">
+                <li>1920 x 1080 pixels</li>
+                <li>7 ms</li>
+                <li>Format large 16/9</li>
+                <li>Dalle IPS</li>
+                <li>HDMI</li>
+                <li>VGA</li>
+                <li>Noir</li>
+            </ul>
+            <div class="Gallery">
+                
+            </div>
+            <section class="Info">
+                <p class="brand">Marque : AOC</p>
+                <section class="Call">
+                    <div class="price">
+                        <p>109€94</p>
+                        <p>dont éco participation 1€70</p>
+                    </div>
+                    <div class="cart">
+                        <button class="buy">Ajouter au panier</button>
+                        <button class="want">Ajouter à ma liste d'envie</button>
+                    </div>
+                    <p class="waranty">Garantie : 2 années vendeur</p>
+                </section>
+                <p>
+                    Un écran 23,8" Full HD et sans bords; c'est sûrement votre futur moniteur pour la maison ou le bureau. AOC vous propose le 24B1XHS, un produit élégant au look doté d'une dalle VA avec un temps de réponse rapide de 7 ms en résolution 1920 x 1080 pixels. Cet écran WLED très fonctionnel offre un contenu avec un fréquence de 60 Hz, idéal pour tous les usages du quotidien.
+                </p>
+                <ul>
+                    <li>Écran large de 23.8" avec résolution Full HD (1920 x 1080)</li>
+                    <li>Des couleurs riches et nuancées avec un contraste dynamique de 20.000.000:1 (typique 1000:1)</li>
+                    <li>Temps de réponse de 7 ms</li>
+                    <li>Dalle IPS</li>
+                    <li>Luminosité 250 cd/m²</li>
+                    <li>Modes Flicker-Free et Anti-lumière bleue (Low blue mode)</li>
+                    <li>Connecteurs : HDMI 1.4, VGA </li>
+                    <li>Design sans contour & profil plat </li>
+                    <li>Consommation d'énergie modeste : 25 Watts </li>
+                    <li>Dimensions (avec support) : 419.8 x 540.1 x 186.8 mm</li>
+                    <li>Poids : 2.48 kg</li>
+                </ul>
+            </section>
+        </section>
+        <section class="Product-description" id="description">
+            <h2>Descriptif</h2>
+            <article>
+                <h3>Un moniteur Full HD performant et tou en finesse</h3>
+                <div>
+                    <p>
+                        Issu de la série B1, le moniteur AOC 24B1XHS dispose de tous les atouts indispensables pour offrir une expérience utilisateur agréable. Son écran Full HD de 23.8" s'accompagne d'une dalle IPS ainsi que d'un temps de réponse de 7 ms pour une image toujours performante. Aussi, le 24B1XHS séduit par son profil plat et son design sans contour qui favorise le plaisir visuel et l'immersion. Ce moniteur WLED trouvera facilement une place de choix sur votre bureau pour toutes vos utilisations quotidiennes.
+                    </p>
+                    <img src="ressources/images/product-1/desc-1.jpg" alt="Dimensions de l'écran">
+                </div>
+            </article>
+            <article>
+                <h3>Appréciez le design sans contour</h3>
+                <div>
+                    <p>
+                        En plus du look moderne et attrayant qu'il procure, le design sans contour permet des configurations à plusieurs écrans sans interruption. Votre curseur, vos fenêtres ne sont plus perdus dans les abysses sombres des contours lorsque plusieurs écrans sont placés les uns à côté des autres.
+                    </p>
+                    <p>
+                        Le profil plat de ce moniteur AOC offre de nombreux avantages. Très élégant sous tous les angles, il devient un choix idéal dans les espaces publics. Sa finesse et sa conception moderne lui permettent d'occuper moins de place sur le bureau.
+                    </p>
+                    <img src="ressources/images/product-1/desc-2.jpg" alt="Détail du cadre">
+                </div>
+            </article>
+            <article>
+                <h3>Tout le confort nécessaire</h3>
+                <div>
+                    <p>
+                        Agréable visuellement et intuitif, ce moniteur dispose également d'une dalle IPS. Cette dernière reproduit des couleurs éclatantes et offre de très larges angles de vue. De cette façon, les images gardent toujours un excellent aspect et une parfaite précision, quel que soit l'angle auquel vous regardez l'écran. 
+                    </p>
+                    <p>
+                        Vous voulez utiliser votre écran même dans un environnement très lumineux, à côté d'une fenêtre au soleil par exemple ? La haute luminosité de 250 cd/m² garantit une bonne visibilité, même dans des conditions difficiles.
+                    </p>
+                    <img src="ressources/images/product-1/desc-3.jpg" alt="Ecran">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>

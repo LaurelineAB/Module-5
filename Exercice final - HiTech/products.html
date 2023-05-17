@@ -9,30 +9,34 @@
 </head>
 <body class="container-fluid">
     <!--(header>(section.name>(a.logo>figure+h1)+h2)+(section.admin>figure+form>select>option))-->
-    <header class="navbar bg-dark row">
-        <section class="name d-flex align-items-center px-3">
-            <a href="" class="navbar-brand">
+    <header class="bg-dark row d-flex flex-md-row flex-row-reverse">
+        <section class="col navbar  navbar-dark navbar-expand-md d-flex align-items-center">
+            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerHeader" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
                 <img src="ressources/images/logo.svg" alt="Logo" width="30" class="d-inline-block align-text-top">
                 <h1 class="d-inline-block align-text-top fs-5 text-light">HiTech.NET</h1>
             </a>
-            <h2 class="fs-1 text-muted">Gestion des produits</h2>
-        </section>
-        <section class="admin d-flex align-items-center pe-5">
-            <img src="ressources/images/bob.png">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle bg-dark border-0" type="button" data-bs-toggle="dropdown">
-                    Bob
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item active" href="#">Mon compte</a></li>
-                    <li><a class="dropdown-item" href="#">Déconnexion</a></li>
-                  </ul>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerHeader">
+                <h2 class="fs-1 text-muted">Gestion des produits</h2>
+                <div class="dropdown">
+                    <img src="ressources/images/bob.png">
+                    <button class="btn btn-secondary dropdown-toggle bg-dark border-0" type="button" data-bs-toggle="dropdown">
+                        Bob
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#">Mon compte</a></li>
+                        <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </header>
+    
     <main class="row">
-        <aside class="col-2 bg-light">
-            <ul class="list-unstyled px-3">
+        <aside class="col-sm-2 bg-light d-none d-sm-block">
+            <ul class="list-unstyled">
                 <li class="fs-4 text-secondary lh-base my-3"><span class="icon-home pe-2"></span>Accueil
                     <ul class="list-unstyled">
                         <li class="mt-2 lh-sm"><a href="#" class="text-decoration-none fs-6 ps-2">Tableau de bord</a></li>
@@ -46,8 +50,8 @@
                 </li>
                 <li class="fs-4 text-secondary lh-base my-3"><span class="icon-shopping-basket pe-2"></span>Boutique
                     <ul class="list-unstyled">
-                        <li class="mt-2 lh-sm"><a href="#" class="text-decoration-none fs-6 ps-2">Gestion des rayons</a></li>
-                        <li class="lh-sm bg-primary rounded active"><a href="#" class="text-decoration-none text-light fs-6 ps-2">Gestion des produits</a></li>
+                        <li class="mt-2 lh-sm"><a href="products.html" class="text-decoration-none fs-6 ps-2">Gestion des rayons</a></li>
+                        <li class="lh-sm bg-primary rounded active"><a href="products.html" class="text-decoration-none text-light fs-6 ps-2">Gestion des produits</a></li>
                         <li class="lh-sm"><a href="#" class="text-decoration-none fs-6 ps-2">Gestion des commandes</a></li>
                     </ul>
                 </li>
@@ -60,10 +64,10 @@
                 </li>
             </ul>
         </aside>
-        <section class="main col">
-            <section class="actions d-flex justify-content-between align-items-center my-3">
-                <form action="" class="d-flex align-items-center">
-                    <div class="col-auto me-2">
+        <section class="main col-sm-10">
+            <section class="actions d-sm-flex justify-content-between align-items-center my-3">
+                <form action="" class="d-sm-flex align-items-center">
+                    <div class="col-8 col-sm-auto me-2">
                         <input type="text" name="search" class="form-control"/>
                     </div>
                     <div class="col-auto">
@@ -71,66 +75,68 @@
                     </div>
                 </form>
                 <div class="col-auto">
-                    <button type="button" class="btn btn-primary">Ajouter un produit</button>
+                    <button type="button" class="btn btn-primary"><a href="product-empty.html" class="text-decoration-none text-reset">Ajouter un produit</a></button>
                 </div>
             </section>
-            <table class="table table-striped table-bordered align-middle me-3">
-                <thead>
-                    <tr class="table-dark">
-                        <th scope="col">Statut</th>
-                        <th scope="col">Boutique</th>
-                        <th scope="col">Rayon</th>
-                        <th scope="col">Produit</th>
-                        <th scope="col" class="text-end">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-success">En boutique</td>
-                        <td>Périphériques & composants</td>
-                        <td>Ecrans d'ordinateur</td>
-                        <td>AOC 24B1XHS</td>
-                        <td class="text-end">
-                            <button type="button" class="btn btn-primary text-danger bg-transparent border-danger"><span class="icon-archive pe-2"></span>Retirer</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-pencil pe-2"></span>Modifier</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-success">En boutique</td>
-                        <td>Périphériques & composants</td>
-                        <td>Ecrans d'ordinateur</td>
-                        <td>AOC 24B2XHS</td>
-                        <td class="text-end">
-                            <button type="button" class="btn btn-primary text-danger bg-transparent border-danger"><span class="icon-archive pe-2"></span>Retirer</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-pencil pe-2"></span>Modifier</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-danger">Retiré</td>
-                        <td>Périphériques & composants</td>
-                        <td>Ecrans d'ordinateur</td>
-                        <td>AOC 24B3XHS</td>
-                        <td class="text-end">
-                            <button type="button" class="btn btn-primary text-success bg-transparent border-success"><span class="icon-check-square pe-2"></span>Remettre</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-pencil pe-2"></span>Modifier</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-muted">En attente</td>
-                        <td>Périphériques & composants</td>
-                        <td>Ecrans d'ordinateur</td>
-                        <td>AOC 24B4XHS</td>
-                        <td class="text-end">
-                            <button type="button" class="btn btn-primary text-success bg-transparent border-success"><span class="icon-check-square pe-2"></span>Mettre en boutique</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-pencil pe-2"></span>Modifier</button>
-                            <button type="button" class="btn btn-primary text-secondary bg-transparent border-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered align-middle me-3">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col">Statut</th>
+                            <th scope="col">Boutique</th>
+                            <th scope="col">Rayon</th>
+                            <th scope="col">Produit</th>
+                            <th scope="col" class="text-end">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-success">En boutique</td>
+                            <td>Périphériques & composants</td>
+                            <td>Ecrans d'ordinateur</td>
+                            <td>AOC 24B1XHS</td>
+                            <td class="text-end">
+                                <button type="button" class="btn btn-outline-danger"><span class="icon-archive pe-2"></span>Retirer</button>
+                                <button type="button" class="btn btn-outline-secondary"><a href="product-1.html" class="text-decoration-none text-reset"><span class="icon-pencil pe-2"></span>Modifier</a></button>
+                                <button type="button" class="btn btn-outline-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-success">En boutique</td>
+                            <td>Périphériques & composants</td>
+                            <td>Ecrans d'ordinateur</td>
+                            <td>AOC 24B2XHS</td>
+                            <td class="text-end">
+                                <button type="button" class="btn btn-outline-danger"><span class="icon-archive pe-2"></span>Retirer</button>
+                                <button type="button" class="btn btn-outline-secondary"><span class="icon-pencil pe-2"></span>Modifier</button>
+                                <button type="button" class="btn btn-outline-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-danger">Retiré</td>
+                            <td>Périphériques & composants</td>
+                            <td>Ecrans d'ordinateur</td>
+                            <td>AOC 24B3XHS</td>
+                            <td class="text-end">
+                                <button type="button" class="btn btn-outline-success"><span class="icon-check-square pe-2"></span>Remettre</button>
+                                <button type="button" class="btn btn-outline-secondary"><span class="icon-pencil pe-2"></span>Modifier</button>
+                                <button type="button" class="btn btn-outline-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">En attente</td>
+                            <td>Périphériques & composants</td>
+                            <td>Ecrans d'ordinateur</td>
+                            <td>AOC 24B4XHS</td>
+                            <td class="text-end">
+                                <button type="button" class="btn btn-outline-success"><span class="icon-check-square pe-2"></span>Mettre en boutique</button>
+                                <button type="button" class="btn btn-outline-secondary"><span class="icon-pencil pe-2"></span>Modifier</button>
+                                <button type="button" class="btn btn-outline-secondary"><span class="icon-tags pe-2"></span>Caractéristiques</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <nav aria-label="Page navigation example">
               <ul class="pagination justify-content-center">
                 <li class="page-item disabled">

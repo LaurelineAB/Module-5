@@ -25,10 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*Ajout perso*/
+/*Ajout perso
 [class^="icon-"]:before, [class*=" icon-"]:before {
   display:block;
-}
+}*/
 
 .icon-cart:before {
   content: "\e900";
